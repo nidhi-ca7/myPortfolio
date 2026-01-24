@@ -1,0 +1,102 @@
+.pdf-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 60px auto;
+  }
+  
+  .pdf-container iframe {
+    width: 100%;
+    height: 90vh;        /* key part */
+    border: none;
+    border-radius: 16px;
+  }
+  
+
+  .introSection {
+    display: flex;
+    gap: 40px;
+    text-align: left;
+    margin: 32px auto;
+    padding: 50px;
+    justify-content: center;
+
+  }
+  
+  .roleTitle, .durationTitle, .teamTitle, .skillsTitle {
+    border: solid black;
+    padding: 15px;
+    width: 250px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    text-align: center;
+    
+  }
+
+  .roleTitle1, .durationTitle1, .teamTitle1, .skillsTitle1 {
+    font-size: 18px;
+    padding-bottom: 20px;
+
+  }
+
+  .roleTitle2, .durationTitle2, .teamTitle2, .skillsTitle2 {
+    font-size: 18px;
+    padding-bottom: 15px;
+
+  }
+
+
+
+  .roleTitle.in-view, .durationTitle.in-view, .teamTitle.in-view, .skillsTitle.in-view {
+    animation: fadeRise 0.8s ease-out forwards;
+}
+
+
+
+@keyframes fadeRise {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+.roleTitle1, .durationTitle1, .skillsTitle1, .teamTitle1 {
+  color: #ffffff; 
+  font-weight: bold;
+  text-shadow: none;
+  animation: glowOnce 2.0s ease-in-out forwards;
+  }
+  
+  
+  @keyframes glowOnce {
+  0% {
+  text-shadow: none;
+  transform: scale(1);
+  }
+  50% {
+  text-shadow:
+  0 0 10px #f6b3ff,
+  0 0 20px #ffb3ff,
+  0 0 40px #e932e9,
+  0 0 80px hsl(294, 73%, 34%);
+  transform: scale(1.1);
+  }
+  100% {
+  /* text-shadow: none;
+  transform: scale(1); */
+  text-shadow:
+  0 0 10px #f6b3ff,
+  0 0 20px #ffb3ff,
+  0 0 40px #e932e9,
+  0 0 80px hsl(294, 73%, 34%);
+  transform: scale(1.1);
+  }
+  }
