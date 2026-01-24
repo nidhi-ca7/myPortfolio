@@ -1,0 +1,590 @@
+
+
+.headerBox {
+    position: relative;
+    width: 1100px;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+
+.navy {
+    color: #457b9d;
+}
+
+.aqua {
+    color: #a8dadc;
+}
+
+.red {
+    color: #a09596;
+}
+
+.mint {
+    color: #f7faf5;
+}
+
+.titles {
+    color: #1d3557;
+}
+
+h2 {
+    color: #1d3557;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .title-bar {
+    background: black;
+    width: 100%;
+    /* prevents margin-collapsing from children */
+    overflow: auto;
+    /* or you can use padding-top: 1px; then adjust */
+    padding: 40px 0;
+    padding-bottom: 150px;
+  }
+  
+  .title-bar h1 {
+    margin: 0;
+    color: white;
+    text-align: center;
+  }
+  
+
+.beginning {
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+
+ 
+
+.beginning.in-view {
+    animation: fadeRise 1.5s ease-out forwards;
+}
+
+
+
+.projTitle {
+    font-size: 45px;
+    text-align: center;
+}
+
+
+
+@keyframes fadeRise {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(40px);
+    }
+}
+
+
+.firstTitle h1 {
+    margin: 0 auto;
+}
+
+
+
+
+.myPhotoHead {
+    height: 650px;
+    border-radius: 40px;
+
+}
+
+.glowName {
+color: #ffffff; 
+font-weight: bold;
+text-shadow: none;
+animation: glowOnce 2.5s ease-in-out forwards;
+}
+
+
+@keyframes glowOnce {
+0% {
+text-shadow: none;
+transform: scale(1);
+}
+50% {
+text-shadow:
+0 0 10px #f6b3ff,
+0 0 20px #ffb3ff,
+0 0 40px #e932e9,
+0 0 80px hsl(294, 73%, 34%);
+transform: scale(1.1);
+}
+100% {
+/* text-shadow: none;
+transform: scale(1); */
+text-shadow:
+0 0 10px #f6b3ff,
+0 0 20px #ffb3ff,
+0 0 40px #e932e9,
+0 0 80px hsl(294, 73%, 34%);
+transform: scale(1.1);
+}
+}
+
+.firstMain h1,
+.secondMain h1 {
+width: 450px;       
+color: #1d3557;
+}
+
+
+
+
+.myDescription {
+   
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+
+
+.begSection {
+    display: flex;
+    flex-direction: row
+}
+
+.decorCirclesLeft1 {
+    height: 20px;
+    width: 20px;
+    background-color: #FF8F7A;
+    border-radius: 50%;
+    position: absolute;
+    top: 55px;
+    left: 5px;
+}
+
+.decorCirclesLeft2 {
+    height: 23px;
+    width: 23px;
+    background-color: #F7B685;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+}
+
+.decorCirclesLeft4 {
+    height: 23px;
+    width: 23px;
+    background-color: #FFF4A3;
+    border-radius: 50%;
+    position: absolute;
+    top: 81px;
+    left: 17px;
+}
+
+.decorCirclesLeft5 {
+    height: 15px;
+    width: 15px;
+    background-color: #F7B685;
+    border-radius: 50%;
+    position: absolute;
+    top: 76px;
+    left: 2px;  
+}
+
+.decorCirclesLeft3 {
+    height: 26px;
+    width: 26px;
+    background-color: #ece87a;
+    border-radius: 50%;
+    position: absolute;
+    top: 72px;
+    left: 55px;
+
+}
+
+.decorCirclesLeft6 {
+    height: 10px;
+    width: 10px;
+    background-color: #f1b5a7;
+    border-radius: 50%;
+    position: absolute;
+    top: 94px;
+    left: 40px;
+}
+
+.decorCirclesLeft7 {
+    height: 25px;
+    width: 25px;
+    background-color: #ef9191;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.decorCirclesLeft8 {
+    height: 25px;
+    width: 25px;
+    background-color: #e4c791;
+    border-radius: 50%;
+    position: absolute;
+    top: 102px;
+    left: 3px;
+}
+
+.decorCirclesLeft9 {
+    height: 35px;
+    width: 35px;
+    background-color: #d8a6b4;
+    border-radius: 50%;
+    position: absolute;
+    top: 118px;
+    left: 22px;
+}
+
+
+
+/* ------------------ */
+
+
+.decorCirclesLeft1Set {
+    height: 20px;
+    width: 20px;
+    background-color: #d8a6b4;
+    border-radius: 50%;
+    position: absolute;
+    top: 55px;
+    left: 610px;
+}
+
+.decorCirclesLeft2Set {
+    height: 23px;
+    width: 23px;
+    background-color:  #e4c791;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 635px;
+}
+
+.decorCirclesLeft4Set {
+    height: 23px;
+    width: 23px;
+    background-color: #ef9191;
+    border-radius: 50%;
+    position: absolute;
+    top: 81px;
+    left: 622px;
+}
+
+.decorCirclesLeft5Set {
+    height: 15px;
+    width: 15px;
+    background-color:  #f1b5a7;
+    border-radius: 50%;
+    position: absolute;
+    top: 76px;
+    left: 607px;  
+}
+
+.decorCirclesLeft3Set {
+    height: 26px;
+    width: 26px;
+    background-color: #ece87a;
+    border-radius: 50%;
+    position: absolute;
+    top: 72px;
+    left: 660px;
+
+}
+
+.decorCirclesLeft6Set {
+    height: 10px;
+    width: 10px;
+    background-color: #F7B685;
+    border-radius: 50%;
+    position: absolute;
+    top: 94px;
+    left: 645px;
+}
+
+.decorCirclesLeft7Set {
+    height: 25px;
+    width: 25px;
+    background-color: #FFF4A3;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 655px;
+}
+
+.decorCirclesLeft8Set {
+    height: 25px;
+    width: 25px;
+    background-color: #F7B685;
+    border-radius: 50%;
+    position: absolute;
+    top: 102px;
+    left: 608px;
+}
+
+.decorCirclesLeft9Set {
+    height: 35px;
+    width: 35px;
+    background-color: #FF8F7A;
+    border-radius: 50%;
+    position: absolute;
+    top: 118px;
+    left: 627px;
+}
+
+
+.beach, .dubai, .mammoth {
+    width: 500px;
+    position: absolute;
+    top: 0;
+    transition: transform 1s ease;
+   box-shadow: 2px 2px 5px;
+}
+
+
+.beach {
+    width:300px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+
+}
+
+
+.dubai {
+    width:300px;
+    /* height: 330px;; */
+    position: absolute;
+    left: 250px;
+    top: 100px;
+
+}
+
+
+
+.mammoth {
+    width:300px;
+    height: 400px;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+}
+
+
+.photo:hover .beach {
+    transform: rotate(-30deg) translate(-150px, 20px) scale(0.7);
+  }
+
+  .photo:hover .dubai {
+    transform: rotate(-15deg) translate(-30px, 5px) scale(0.7);
+  }
+
+  .photo:hover .mammoth {
+    transform: rotate(30deg) translate(110px, 10px) scale(0.7);
+  }
+
+  .photo {
+    position: absolute;
+    height: 500px;   
+    right: 1300px;
+    bottom: -400px;
+    
+}
+
+
+.left {
+    text-align: center;
+}
+
+.right {
+    text-align: center;
+}
+.leftDesc {
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+
+
+
+.imgGalFull {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    padding: 40px;
+
+    
+}
+
+.imgGal img {
+    max-width: 200px;
+    
+}
+
+#imgD {
+    height: 300px;
+}
+
+#imgI {
+    height: 170px;
+}
+
+#imgH {
+    height: 150px;
+}
+
+
+
+
+.subs {
+font-size: 30px;
+font-family: "Lucida Console", "Courier New", monospace;
+/* position: relative; */
+/* display: inline-block; */
+text-align: center;
+color: #1d3557;                 
+text-shadow: 0 0 8px #a8dadc, 0 0 15px #a8dadc;  
+transition: all 0.4s ease;
+}
+
+.subs:hover {
+color: #e63946;                
+text-shadow: 
+0 0 15px #a8dadc, 
+0 0 30px #a8dadc, 
+0 0 45px #a8dadc;             
+transform: scale(1.05);
+}
+
+.poetryGallery {
+text-align: center;
+margin: 80px auto;
+max-width: 1100px;
+}
+
+.galleryRow {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 30px;
+margin-top: 40px;
+}
+
+.poem {
+position: relative;
+width: 230px;
+height: 230px;
+border-radius: 15px;
+overflow: hidden;
+cursor: pointer;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.poem img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 15px;
+transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.poem:hover img {
+transform: scale(1.08);
+filter: brightness(80%);
+}
+
+.caption {
+position: absolute;
+bottom: 10px;
+left: 0;
+width: 100%;
+text-align: center;
+color: #f7faf5;
+font-weight: bold;
+font-size: 1rem;
+text-shadow: 0 0 8px #a8dadc, 0 0 15px #a8dadc;
+opacity: 0;
+transition: opacity 0.4s ease;
+}
+
+.poem:hover .caption {
+opacity: 1;
+}
+
+
+
+
+.aboutSection {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: 50px;
+/* margin-left: 160px;  */
+}
+
+.aboutSection img {
+margin-left: -60px; 
+}
+
+.aboutSection div:last-child {
+max-width: 480px;
+}
+
+
+.firstMain,
+.secondMain,
+.thirdMain {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 80px;
+margin: 100px auto;
+max-width: 1100px;
+flex-wrap: wrap;
+}
+
+.firstMain div,
+.secondMain div,
+.thirdMain div {
+flex: 1;
+min-width: 300px;
+}
+
+.mySpeech {
+    width: auto;
+    height: 400px;
+    
+}
+
+.myTedx,
+.tedvideo {
+width: 420px;
+border-radius: 10px;
+}
+
+.fourthLike {
+    display: flex;
+    position: absolute;
+   right: 100px;
+   bottom: -400px;
+}
+
+
+
+

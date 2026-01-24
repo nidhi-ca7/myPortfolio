@@ -1,0 +1,60 @@
+*{ box-sizing: border-box; 
+
+}
+
+body {
+    background-color: #deeaec;
+    padding: 30px 50px; 
+    /* font-family: "Georgia", serif; */
+    font-family: "Garamond",serif;
+    font-style: italic;
+    font-size: 20px;
+    /* line-height: 1.6; */
+    overflow-x: hidden; 
+  }
+
+
+
+  .projTitle {
+    color: #1d3557;
+    width: 450px;
+    text-align: center;
+
+  }
+
+  
+
+  p {
+    font-size: 1.1rem;
+    color: #1d3557;
+  }
+  
+
+  .navbar {
+    position: absolute;
+    top: 20px;      
+    right: 30px;    
+  }
+  
+  .navbar ul {
+    list-style: none;  
+    margin: 0;
+    padding: 0;
+    display: flex;       
+    gap: 20px;           
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff;        
+    font-weight: 500;
+    /* font-family: Arial, sans-serif; */
+    font-family: "Copperplate",fantasy;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #0077b6;       
+  }
+  
