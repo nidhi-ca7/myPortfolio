@@ -1,0 +1,59 @@
+
+
+body {
+    margin: 0px;
+}
+
+
+
+
+#MainForm {
+    background-color: rgb(0, 0, 0);
+    width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+
+.img-box {
+   
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    flex: 1;    
+}
+
+.img-box h2 {
+    max-width: 500px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    
+}
+
+
+
+#contactContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px; 
+    width: 100%;
+    margin-top: 100px;
+
+}
+
+
+
+
+label {
+    color: white;
+}

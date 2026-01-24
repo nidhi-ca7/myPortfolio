@@ -1,0 +1,341 @@
+
+
+
+img {
+    width: 300px;
+    height: 200px;
+    }
+          
+
+body, html {
+    overflow-x: hidden;
+}
+  
+
+
+.pdf-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 60px auto;
+  }
+  
+  .pdf-container iframe {
+    width: 100%;
+    height: 90vh;        /* key part */
+    border: none;
+    border-radius: 16px;
+  }
+  
+
+  .introSection {
+    display: flex;
+    gap: 40px;
+    text-align: left;
+    margin: 32px auto;
+    padding: 50px;
+    justify-content: center;
+
+  }
+  
+  .roleTitle, .durationTitle, .teamTitle, .skillsTitle {
+    border: solid black;
+    padding: 15px;
+    width: 250px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    text-align: center;
+    
+  }
+
+  .roleTitle1, .durationTitle1, .teamTitle1, .skillsTitle1 {
+    font-size: 18px;
+    padding-bottom: 20px;
+
+  }
+
+  .roleTitle2, .durationTitle2, .teamTitle2, .skillsTitle2 {
+    font-size: 18px;
+    padding-bottom: 15px;
+
+  }
+
+
+
+  .roleTitle.in-view, .durationTitle.in-view, .teamTitle.in-view, .skillsTitle.in-view {
+    animation: fadeRise 0.8s ease-out forwards;
+}
+
+
+
+@keyframes fadeRise {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+.roleTitle1, .durationTitle1, .skillsTitle1, .teamTitle1 {
+  color: #ffffff; 
+  font-weight: bold;
+  text-shadow: none;
+  animation: glowOnce 2.0s ease-in-out forwards;
+  }
+  
+  
+  @keyframes glowOnce {
+  0% {
+  text-shadow: none;
+  transform: scale(1);
+  }
+  50% {
+  text-shadow:
+  0 0 10px #f6b3ff,
+  0 0 20px #ffb3ff,
+  0 0 40px #e932e9,
+  0 0 80px hsl(294, 73%, 34%);
+  transform: scale(1.1);
+  }
+  100% {
+  /* text-shadow: none;
+  transform: scale(1); */
+  text-shadow:
+  0 0 10px #f6b3ff,
+  0 0 20px #ffb3ff,
+  0 0 40px #e932e9,
+  0 0 80px hsl(294, 73%, 34%);
+  transform: scale(1.1);
+  }
+  }
+            
+.im1 {
+    position: relative;
+    margin: 20px auto;
+    right: 300px;
+    border: 2px solid black;
+        }
+  
+.im2 {
+    position: relative;
+    top: 20px;
+    right: 250px;
+    border: 2px solid black;
+    }
+  
+.im3 {
+    position: relative;
+    border: 2px solid black;
+    bottom: 80px;
+    left: 8px;  
+     }
+  
+.im4 {
+    position: relative;
+    border: 2px solid black;
+    bottom: 650px;
+    left: 300px;  
+    }
+  
+.im5 {
+    position: relative;
+    border: 2px solid black;
+    bottom: 600px;
+    left: 300px;  
+    }
+  
+  
+.im6 {
+    position: relative;
+    bottom: 650px;
+    left: 30px;
+    border: 2px solid black;
+    }
+  
+  
+#puzzleGrid {
+    position: absolute;
+    left: 300px;
+    top: 400px;
+    border:  3px solid black;
+    transition: border-color 0.8 ease;
+    width: 600px;
+    height: 600px;
+    border-color: 0.8s ease;
+    z-index: 0;
+    }
+  
+.instruction {
+    position: absolute;
+    top: 200px;
+    font-size: 30px;
+    text-align: left;
+    }
+  
+  
+#shipDraw {
+    width: 600px;
+    height: 600px;
+    display: none;
+    margin: 20px auto;
+    position: absolute;
+    bottom: -1700px;
+    left: 200px;
+    
+
+    /* display: block; */
+    }
+  
+.piece {
+    z-index: 5;
+        }
+  
+
+.project1 h1{
+    width: 450px;       
+    color: #1d3557;
+    text-align: left;   
+    padding-right: 900px;                 
+    }
+  
+  
+.project3 {
+    transform: scale(0.8);
+    }
+  
+.speechGallery img {
+    width: 250px;
+    height: 500px;
+    margin: 50px;
+    border-radius: 10px;
+    }
+          
+button {
+    position: absolute;
+    bottom: -1000px; 
+    left: 50%;
+
+    
+    background-color: rgb(10, 15, 119);
+    font-family: "Times New Roman", Times, serif;
+    border: 2px solid black;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    }
+  
+  
+.caption {
+    position: absolute;
+    top: 30px;             
+    left: 50%;
+    transform: translateX(-50%); 
+    background: rgba(0,0,0,0.45); 
+                  color: white;
+                  padding: 4px 10px;
+                  border-radius: 5px;
+                  font-size: 0.9rem;
+                  font-weight: bold;
+                  opacity: 0;
+                  transition: opacity 0.4s ease;
+                          }
+  
+  
+              .speechPhoto:hover .caption {
+              opacity: 1;
+              }
+  
+              .speechPhoto {
+                  position: relative;
+                  display: inline-block;
+              }
+  
+  
+              .photosRow {
+                  display: flex;
+                  justify-content: center;
+                  flex-wrap: wrap;
+              }
+              .speechPhoto:hover img {
+                  transform: scale(1.04);
+                  }
+  
+              .conceptImgs {
+                  display: flex;
+                  align-items: center;
+                  flex-direction: column;
+              }
+              
+              .conceptImgs img {
+                  width: 600px;
+                  height: auto;
+                  margin: 10px;
+              }
+  
+              .caseCard {
+                  background: #2ea4d3;
+                  padding: 60px;
+                  border-radius: 16px;
+                  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                  margin: 50px auto;
+                  max-width: 1000px;
+              }
+
+              .caseCard h2{
+                margin-top: 0;
+                margin-bottom: 0;
+              }
+  
+              .caseImage {
+                  width: 90%;
+                  max-width: 900px;
+                  border-radius: 12px;
+              }
+  
+.description {
+    font-family: "Garamond", serif;
+    font-style: italic;
+    font-size: 25px;
+    text-align: left;
+     color: white;
+     opacity: 0;
+    } 
+  
+ .mainSection9 {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
+} 
+
+.project3 {
+    display: flex;
+    /* flex-direction: column; */
+}
+        
+.description.in-view {
+    animation: fadeRise 1.5s ease-out forwards;
+}
+  
+  @keyframes fadeRise {
+      0% {
+          opacity: 0;
+          transform: translateY(70px);
+      }
+      100% {
+          opacity: 1;
+          transform: translateY(0px);
+      }
+  }
+  
+  .instruction:hover {
+      transform: scale(1.05);
+  
+  }

@@ -1,0 +1,165 @@
+
+
+body {
+    margin: 0px;
+}
+.contactCard {
+    display: flex;
+    position: absolute; 
+    left: 0px;
+    top: 90px;
+    background: rgb(0, 0, 0);
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 500px;
+    animation: slideInFromLeft 1.5s ease-out forwards;
+}
+
+
+.socialRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 45px;
+
+}
+
+.socialRow img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.socialRow img:hover {
+    transform: scale(1.15);
+}
+
+
+
+
+.contactCard h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.descript {
+    font-family: "Garamond", serif;
+    font-style: italic;
+    font-size: 50px;
+    text-align: left;
+     color: white;
+     opacity: 0;
+     animation: fadeRise 1.5s ease-out forwards;
+
+}
+
+
+@keyframes fadeRise {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#button1 {
+    border-radius: 20px;
+    color: rgb(207, 14, 207);
+    border-color: rgb(207, 14, 207);
+    background: black;
+    font-size: 20px;
+}
+.contactForm {
+    padding: 30px;
+    width: 600px;
+    margin: 300px auto;
+    border-radius: 10px;
+    background-color: rgb(203, 212, 212);
+}
+/* 
+.form-col {
+    /* text-align: center; 
+} */
+
+#MainForm {
+    background-color: rgb(0, 0, 0);
+    width: 600px;
+    padding: 30px;
+    /* height: 250px; */
+    border-radius: 10px;
+    /* display: flex; */
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+
+.img-box {
+    /* display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-right: 10px; */
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-start;
+    flex: 1;    
+}
+
+.img-box h2 {
+    max-width: 200px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 75px;
+    color: white;
+    font-size: 30px;
+    
+}
+
+textarea {
+    width: 100%;
+    max-width: 350px;
+
+}
+
+#contactContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px; 
+    width: 100%;
+    margin-top: 100px;
+
+}
+
+
+
+#MainForm text {
+    color: pink;
+}
+
+label {
+    color: white;
+}
