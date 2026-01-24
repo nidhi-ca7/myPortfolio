@@ -1,0 +1,196 @@
+
+
+
+
+
+        
+.im1 {
+  position: relative;
+  margin: 20px auto;
+  right: 300px;
+  border: 2px solid black;
+      }
+
+.im2 {
+  position: relative;
+  top: 20px;
+  right: 250px;
+  border: 2px solid black;
+  }
+
+.im3 {
+  position: relative;
+  border: 2px solid black;
+  bottom: 80px;
+  left: 8px;  
+   }
+
+.im4 {
+  position: relative;
+  border: 2px solid black;
+  bottom: 650px;
+  left: 300px;  
+  }
+
+.im5 {
+  position: relative;
+  border: 2px solid black;
+  bottom: 600px;
+  left: 300px;  
+  }
+
+
+.im6 {
+  position: relative;
+  bottom: 650px;
+  left: 30px;
+  border: 2px solid black;
+  }
+
+
+#puzzleGrid {
+  position: absolute;
+  left: 300px;
+  top: 400px;
+  border:  3px solid black;
+  transition: border-color 0.8 ease;
+  width: 600px;
+  height: 600px;
+  border-color: 0.8s ease;
+  z-index: 0;
+  }
+
+
+
+#shipDraw {
+  width: 600px;
+  height: 600px;
+  display: none;
+  margin: 20px auto;
+  position: absolute;
+  left: 200px;
+  
+
+  /* display: block; */
+  }
+
+.piece {
+  z-index: 5;
+      }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  .title-bar {
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+  
+    font-size: 80px;     /* <-- this is what you’re missing */
+    padding: 60px 20px 150px;
+    margin: 0;
+  }
+  
+  .subs:hover {
+    color: #e63946;                
+    text-shadow: 
+    0 0 15px #a8dadc, 
+    0 0 30px #a8dadc, 
+    0 0 45px #a8dadc;             
+    transform: scale(1.05);
+    }
+    
+    .poetryGallery {
+    text-align: center;
+    margin: 80px auto;
+    max-width: 1100px;
+    }
+    
+    .galleryRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+    }
+    
+    .poem {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .poem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    }
+        
+    .poem:hover img {
+    transform: scale(1.08);
+    filter: brightness(80%);
+    }
+ 
+    
+    .poem:hover .caption {
+    opacity: 1;
+    }
+
+
+
+
+
+.glowName {
+    color: #ffffff; 
+    font-weight: bold;
+    text-shadow: none;
+    animation: glowOnce 2.5s ease-in-out forwards;
+    }
+    
+    
+    @keyframes glowOnce {
+    0% {
+    text-shadow: none;
+    transform: scale(1);
+    }
+    50% {
+    text-shadow:
+    0 0 10px #f6b3ff,
+    0 0 20px #ffb3ff,
+    0 0 40px #e932e9,
+    0 0 80px hsl(294, 73%, 34%);
+    transform: scale(1.1);
+    }
+    100% {
+    /* text-shadow: none;
+    transform: scale(1); */
+    text-shadow:
+    0 0 10px #f6b3ff,
+    0 0 20px #ffb3ff,
+    0 0 40px #e932e9,
+    0 0 80px hsl(294, 73%, 34%);
+    transform: scale(1.1);
+    }
+    }
+
+.instruction {
+  background: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 45px;
+}
