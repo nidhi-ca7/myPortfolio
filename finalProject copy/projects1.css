@@ -1,0 +1,195 @@
+
+
+
+body {
+  margin: 0px;
+  background-color:#deeaec;
+}
+
+
+
+
+
+
+.btn {
+  /* background-color: rgb(107, 5, 107); */
+  padding: 7px;
+  border-radius: 15px;
+  border: 3px solid;
+  border-color: (188, 11, 188);
+  text-decoration: none;
+
+  color: rgb(207, 14, 207);
+}
+
+
+
+@keyframes fadeRise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.btn {
+  padding: 7px;
+  border-radius: 15px;
+  border: 3px solid rgb(207, 14, 207);
+  text-decoration: none;
+  color: rgb(207, 14, 207);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.2s ease;
+}
+
+.btn-text {
+  display: inline-block;
+  transform: translateY(0);              /* original position */
+  transition: transform 0.5s ease, color 0.2s ease;
+ } 
+
+.btn:hover {
+  background-color: rgb(217, 115, 217);
+}
+
+.btn:hover .btn-text {
+  transform: translateY(-3px);           /* SMALL move up */
+  color: white;
+} 
+
+
+
+
+.flappy {
+  width: auto;
+  height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.firstMain h1,
+.secondMain h1,
+.thirdMain h1 {
+width: 450px;  
+color: white;
+}
+.fourthMain {
+  color: white;
+}
+
+.firstMain, .secondMain, .thirdMain, .fourthMain {
+  background-color: black;
+  border-radius: 20px;
+  margin: 50px;
+  padding: 50px;
+}
+
+
+.leftDesc {
+  color: white;
+}
+
+
+.firstMain,
+.secondMain,
+.thirdMain, 
+.fourthMain
+{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 200px;
+margin: 100px auto;
+max-width: 1100px;
+flex-wrap: wrap;
+}
+
+.firstMain div,
+.secondMain div,
+.thirdMain div,
+.fourthMain div{
+flex: 1;
+min-width: 300px;
+}
+
+
+
+.right {
+  flex: 0 0 auto;
+}
+.leftDesc {
+  max-width: 500px;   /* 👈 this is the key */
+
+}
+
+
+.portfolio-video {
+  width: 120%;
+  height: 50px;
+  max-width: 600px;
+  border-radius: 16px;
+  height: auto;
+  display: block;
+
+}
+
+  .myTedx 
+  {
+    height: 450px;
+    border-radius: 12px;
+  }
+  
+   .myCpm {
+    width: 120%;
+    max-width: 600px;   /* or 550px for VAT if you want */
+    height: auto;
+    display: block;
+  } 
+
+ 
+  
+  .VAT {
+    max-width: 600px;
+    width: 120%;
+    max-width: 600px;   /* or 550px for VAT if you want */
+    height: auto;
+    display: block;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+ 
+.btn {
+  align-self: center;
+}
